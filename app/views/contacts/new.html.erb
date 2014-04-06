@@ -1,7 +1,7 @@
 <div align="center">
-  <h3>Send A message to Us</h3>
+  <h3>Write me a note</h3>
 
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+  <%= simple_form_for @contact, :html => {:class => 'form-horizontal', :style => 'max-width: 480px;' } do |f| %>
     <%= f.input :name, :required => true %>
     <%= f.input :email, :required => true %>
     <%= f.input :message, :as => :text, :required => true %>

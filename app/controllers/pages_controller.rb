@@ -4,5 +4,6 @@ class PagesController < ApplicationController
   def portfolio
   end
   def resume
+  	@user = { :name => "Patrick Millegan" }
   end
 end

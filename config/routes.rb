@@ -1,10 +1,12 @@
 Resume::Application.routes.draw do
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+  resources "contacts", only: [:new, :create]
   root "pages#home"
   get "portfolio" => "pages#portfolio"
   get "resume" => "pages#resume"
-  match '/contacts',     to: 'contacts#new',             via: 'get'
-  resources "contacts", only: [:new, :create]
   
+  # post "contact" => "contacts#create"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
