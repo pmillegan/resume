@@ -3,5 +3,5 @@ $('.error-messages').remove();
   $('#collapseOne').before('<div style="margin-top:10px" class="alert alert-success alert-dismissable"><button type="button" class="close pull-left" data-dismiss="alert" aria-hidden="true">&times;</button><div style="padding-left: 60px;"><%= @success %></div></div>');
   $('#collapseOne').removeClass("in");
 <% elsif @error != nil %>
-  $('#collapseOne').after('<div class= "alert alert-danger alert-dismissable"><button type="button" class="close pull-left" data-dismiss="alert" aria-hidden="true">&times;</button><div style = "padding-left: 60px;"><%= @error %></div></div>');
+  $('#new-mail').after('<div class= "alert alert-danger alert-dismissable"><button type="button" class="close pull-left" data-dismiss="alert" aria-hidden="true">&times;</button><div style = "padding-left: 60px;"><%= @error %></div></div>');
 <% end %>
