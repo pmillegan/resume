@@ -31,24 +31,24 @@ Resume::Application.configure do
   config.action_mailer.delivery_method = :smtp
   # You were right about the SMTP Settings being the issue
   # 
-  # config.action_mailer.smtp_settings = { 
-  #   :address => "localhost", 
-  #   :port => 1025
-  # }
+   config.action_mailer.smtp_settings = { 
+     :address => "localhost", 
+     :port => 1025
+   }
   # 
   # This will work if you actually use Google apps
   # for a domain you own. I used my myskillbase email here
   # and it worked for me.
-  config.action_mailer.smtp_settings = {
-    :address => "smtp.gmail.com",
-    :port => 587,
-    :domain => "myskillbase.com", # domain you own
-    :user_name => "ryan@myskillbase.com", # your email
-    :password => "ENV['PASSWORD']", # your password (took mine out)
+  #config.action_mailer.smtp_settings = {
+  #  :address => "smtp.gmail.com",
+  #  :port => 587,
+  #  :domain => "myskillbase.com", # domain you own
+  #  :user_name => "ryan@myskillbase.com", # your email
+  #  :password => "ENV['PASSWORD']", # your password (took mine out)
     # (here's where config files com in handy)
-    :authentication => "plain",
-    :enable_starttls_auto => true
-  }
+  #  :authentication => "plain",
+  #  :enable_starttls_auto => true
+  #}
 
   # these options are only needed if you choose smtp delivery
   # config.action_mailer.delivery_method = :smtp

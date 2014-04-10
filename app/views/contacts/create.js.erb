@@ -1,7 +1,16 @@
-$('.error-messages').remove();
 <% if @success != nil %>
-  $('#collapseOne').before('<div style="margin-top:10px" class="alert alert-success alert-dismissable"><button type="button" class="close pull-left" data-dismiss="alert" aria-hidden="true">&times;</button><div style="padding-left: 60px;"><%= @success %></div></div>');
+  $('#collapseOne').before('<div id = "muchSuccess" style="margin-top:10px" class="alert alert-success alert-dismissable"><button type="button" class="close pull-left" data-dismiss="alert" aria-hidden="true">&times;</button><div style="padding-left: 60px;"><%= @success %></div></div>');
+  setTimeout(function() {
+  	$('#muchSuccess').fadeOut("slow")
+  }, 3000);
+  $('#contact_name').val('');
+  $('#contact_email').val('');
+  $('#contact_subject').val('');
+  $('#contact_body').val('');
   $('#collapseOne').removeClass("in");
 <% elsif @error != nil %>
-  $('#new-mail').after('<div class= "alert alert-danger alert-dismissable"><button type="button" class="close pull-left" data-dismiss="alert" aria-hidden="true">&times;</button><div style = "padding-left: 60px;"><%= @error %></div></div>');
+  $('#new-mail-footer').after('<div id = "muchFail" class= "alert alert-danger alert-dismissable"><button type="button" class="close pull-left" data-dismiss="alert" aria-hidden="true">&times;</button><div style = "padding-left: 60px; margin-top: 20px;"><%= @error %></div></div>');
+    setTimeout(function() {
+  	$('#muchFail').fadeOut("slow")
+  }, 3000);
 <% end %>

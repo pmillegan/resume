@@ -3,7 +3,9 @@ Resume::Application.routes.draw do
   root "pages#home"
   get "portfolio" => "pages#portfolio"
   get "resume" => "pages#resume"
-  
+
+# THEY KNOW NOTHING ABOUT MODELS AND VIEWS ONLY CONTROLLERS!
+
   # post "contact" => "contacts#create"
 
   # The priority is based upon order of creation: first created -> highest priority.
