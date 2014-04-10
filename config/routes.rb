@@ -1,5 +1,4 @@
 Resume::Application.routes.draw do
-  match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
   root "pages#home"
   get "portfolio" => "pages#portfolio"
