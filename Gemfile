@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 1.2'
 gem "bootstrap-sass", "~> 3.1.1.0"
 gem 'mail_form', '~> 1.5.0'
 gem 'simple_form', '~> 3.0.1'
+gem "font-awesome-rails"
 
 group :development, :test do
      gem 'sqlite3'

@@ -3,6 +3,7 @@ Resume::Application.routes.draw do
   root "pages#home"
   get "portfolio" => "pages#portfolio"
   get "resume" => "pages#resume"
+  get "onesheet" => "pages#onesheet"
 
 # THEY KNOW NOTHING ABOUT MODELS AND VIEWS ONLY CONTROLLERS!
 

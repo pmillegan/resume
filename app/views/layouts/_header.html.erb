@@ -22,27 +22,45 @@
 </nav>
 
 <div class="panel panel-default container">
-  <div class="panel-body">
-    <div class="media">
-      <a class="pull-left" href="#">
-        <img class="media-object img-circle" src="http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/8/005/03c/30c/3a8b18b.jpg" alt="Patrick" style = "height: 100px;">
-      </a>
-      <div class="media-body" style = "padding-left;: 20px;">
-        <h4 class="media-heading">Patrick Millegan <small>Product Manager</small></h4>
-
-        <h4>I solve challenging problems for companies, and I never stop learning new skills to help me do so.</h3>
-
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="btn btn-primary btn-lg active" role="button">
-          E-Mail Me
+    <div class="panel-body">
+      <div class="media">
+        <a class="pull-left" href="#">
+          <img class="media-object img-circle" src="http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/8/005/03c/30c/3a8b18b.jpg" alt="Patrick" style = "height: 100px;">
         </a>
-      </div>
-      
-      <div id="collapseOne" class="panel-collapse collapse">
-        <div class="panel-body">
-          <%= render 'layouts/email_form' %>
+        <div class="media-body" style = "padding-left;: 20px;">
+          <h4 class="media-heading">Patrick Millegan <small>Product Manager</small></h4>
+
+<div class = "row">
+  <div class="col-md-8">  
+          <h4>I solve challenging problems for companies, and I never stop learning new skills to help me do so.</h4>
+  </div>          
+
+            <div class="social offset1">
+              <ul style = "list-style: none;">
+                <li><i class="glyphicon glyphicon-home"></i> Palo Alto, CA</li>
+                <li><i class="glyphicon glyphicon-envelope"></i> PatrickMillegan@gmail.com</li>
+                <li><i class="glyphicon glyphicon-phone-alt"></i> 541-510-8261</li>
+                <li><a href="https://twitter.com/pmillegan" ><i class="fa fa-twitter-square fa-2"></i></a>
+                  <a href="http://fb.com/pmillegan" ><i class="fa fa-facebook-square fa-2" ></i></a>
+                  <a href="www.linkedin.com/in/pmillegan/" ><i class="fa fa-linkedin-square fa-2" ></i></a>
+                  <a href="https://github.com/pmillegan" ><i class="fa fa-github-square fa-2" ></i></a></li>
+                </ul>
+              </div>  
+
+</div>
+
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="btn btn-primary btn-lg active" role="button">
+            E-Mail Me
+          </a>
+
+        </div>
+        
+        <div id="collapseOne" class="panel-collapse collapse">
+          <div class="panel-body">
+            <%= render 'layouts/email_form' %>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
+  

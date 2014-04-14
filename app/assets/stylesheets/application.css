@@ -11,6 +11,9 @@
  *= require_self
  *= require_tree .
  */
+/*
+ *= require font-awesome
+ */
 
 .panel-footer {
 	height: 50px;
