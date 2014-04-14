@@ -12,4 +12,7 @@ class PagesController < ApplicationController
   def onesheet
   end
 
+  def recommendation
+  end
+
 end

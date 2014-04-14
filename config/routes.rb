@@ -4,6 +4,8 @@ Resume::Application.routes.draw do
   get "portfolio" => "pages#portfolio"
   get "resume" => "pages#resume"
   get "onesheet" => "pages#onesheet"
+  get "recommendation" => "pages#recommendation"
+
 
 # THEY KNOW NOTHING ABOUT MODELS AND VIEWS ONLY CONTROLLERS!
 
