@@ -11,6 +11,7 @@ gem "bootstrap-sass", "~> 3.1.1.0"
 gem 'mail_form', '~> 1.5.0'
 gem 'simple_form', '~> 3.0.1'
 gem "font-awesome-rails"
+gem 'bootswatch-rails', '~> 0.5.0'
 
 group :development, :test do
      gem 'sqlite3'
