@@ -78,6 +78,11 @@ Resume::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
+   config.action_mailer.smtp_settings = { 
+     :address => "localhost", 
+     :port => 1025
+   }
+
   #ActionMailer Config
     # these options are only needed if you choose smtp delivery
   # config.action_mailer.delivery_method = :smtp

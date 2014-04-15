@@ -11,7 +11,7 @@
 body {
 
   background-color: #1F1F1F;
-  font-weight: 300;
+  // font-weight: 300;
 }
 .container {
   max-width: 700px;
@@ -61,40 +61,40 @@ footer a {
   padding: 0 ;
 }
 /* Typography */
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 400;
-  color: #000;
-  line-height: 100%;
-}
-h1 {
-  font-size: 40px;
-  line-height: 50px;
-  padding-top: 30px;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 1px;
-}
-h2 {
-  font-size: 21px;
-  text-align: center;
-}
-h3 {
-  font-size: 20px ;
-}
-h4 {
-  font-size: 16px ;
-}
-h5 {
-  font-size: 12px;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5 {
+//   font-weight: 400;
+//   color: #000;
+//   line-height: 100%;
+// }
+// h1 {
+//   font-size: 40px;
+//   line-height: 50px;
+//   padding-top: 30px;
+//   font-weight: 700;
+//   text-align: center;
+//   letter-spacing: 1px;
+// }
+// h2 {
+//   font-size: 21px;
+//   text-align: center;
+// }
+// h3 {
+//   font-size: 20px ;
+// }
+// h4 {
+//   font-size: 16px ;
+// }
+// h5 {
+//   font-size: 12px;
+// }
 p {
-  text-indent: 22px;
-  font-size: 16px;
+  // font-size: 16px;
   margin: 0px;
+  margin-bottom: 10px;
 }
 .welcome {
   font-size: 24px;
@@ -155,12 +155,12 @@ img {
   .container {
     padding: 15px ;
   }
-  h1 {
-    font-size: 24px;
-  }
-  h2 {
-    font-size: 16px;
-  }
+  // h1 {
+  //   font-size: 24px;
+  // }
+  // h2 {
+  //   font-size: 16px;
+  // }
   .social ul li {
     display: block;
   }
