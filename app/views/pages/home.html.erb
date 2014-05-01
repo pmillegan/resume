@@ -1,97 +1,30 @@
-<div id="resumusing" class="panel panel-default" style = "margin: 0 auto; max-width: 800px;">
-<div class="panel-body">
 
-<h1>Much resume</h1> 
 
-<div class="onesheet">
-			<!-- Header -->
-			
+<!-- Nav tabs -->
 
-			<!-- Welcome Text -->
-			<article class="row row-border-bottom">
-				<header class="col-md-3">
-					<h3>Hello!</h3>
-				</header>
-				<div class="col-md-9">
-					I solve challenging problems for companies, and I never stop learning new skills to help me do so.<br>
-				</div>
-			</article>
+<div id="navigator">
+<ul class="btn-group btn-group-lg">
+  <a href="#home" class="active btn btn-default" data-toggle="tab">Resumé</a>
 
-			<!-- Skills -->
-			<article class="row row-border-bottom">
-				<header class="col-md-3">
-					<h3>Skills</h3>
-				</header>
-				<div class="col-md-9">
-					<div class="row skills">
-						<ul class="col-md-6">
-							<li><h4>Product Management</h4></li>
-							<li><strong>UI/UX Design</strong><small> (Flow Charts/Wire frames)</small></li>
-							<li><strong>Analytics</strong><small> (SQL,Excel)</small></li>
-							<li><strong>Public Speaking</strong><small> (Led Team Meetings)</small></li>
-							<li><strong>Programming</strong><small> (Ruby on Rails)</small></li>
-						</ul>
-						<ul class="col-md-6">
-							<li><h4>Domain Knowledge</h4></li>
-							<li><strong>Working with IP</strong><small> (Lucas/Marvel/Disney)</small><li>
-							<li><strong>FTP Games</strong><small> (Disney Social/Mobile Games)</small></li>
-							<li><strong>Software Patents</strong><small> (Hold Two Patents)</small></li>
-							<li><strong>Corporate Structure</strong><small> (Reorganized Disney Social Mobile)</small></li>
-						</ul>
-					</div>
-				</div>
-			</article>
+  <a href="#messages"  class="btn btn-default" data-toggle="tab">Recommendations</a>
 
-			<!-- Education -->
-			<article class="row row-border-bottom">
-				<header class="col-md-3">
-					<h3>Education</h3>
-				</header>
-				<div class="col-md-6">
-					<h4>University of Oregon<small> (Sep 2009- Jun 2012)</small></h4> 
-					B.S. Communication Studies, Digital Arts
-					<h4>University of San Diego</h4>
-					<h5>Aug 2008- May 2009</h5>
-					<p>Navy ROTC, Division I Basketball</p>
-				</div>
-			</article>
+  <a href="#profile" class="btn btn-default" data-toggle="tab">Portfolio</a>
 
-			<!-- Work -->
-			<article class="row row-border-bottom">
-				<header class="col-md-3">
-					<h3>Work Experience</h3>
-				</header>
-				<div class="col-md-9">
-					<h4>Product Manager</h4>
-					<h5>Dec 2013-Present</h5>
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua.</p>
-					<h4>Second Job</h4>
-					<h5>2008-2013</h5>
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua.</p>
-				</div>
-			</article>
-
-			<!-- Interests -->
-			<article class="row row-border-bottom">
-				<header class="col-md-3">
-					<h3>Interests</h3>
-				</header>
-				<div class="col-md-9">
-					<h4>Traveling</h4>
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua</p>
-					<h4>Reading</h4>
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua</p>
-					<h4>Books</h4>
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua</p>
-				</div>
-			</article>
-
-			<!-- Footer -->
-			<footer>
-				&copy; 2014 Patrick Millegan 
-			
-			</footer>
+</ul>
 </div>
 
-</div>
+<!-- Tab panes -->
+<div class="tab-content">
+	<div class="tab-pane active" id="home">
+		<%= render 'resume_partial' %>
+	</div>
+
+	<div class="tab-pane" id="messages">
+		<%= render 'recommendation' %>
+	</div>
+
+	<div class="tab-pane" id="profile">
+		<%= render 'portfolio' %>
+	</div>
+
 </div>
