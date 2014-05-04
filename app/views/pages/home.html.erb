@@ -4,18 +4,18 @@
 
 <div id="navigator">
 <ul class="btn-group btn-group-lg btn-group-justified" data-toggle="buttons" style="margin: 0 auto; max-width:400px">
-  <a href="#home" class="btn btn-default" type="radio" data-toggle="tab">Resumé</a>
+  <a href="#home" class="btn btn-default active" type="radio" data-toggle="tab">Resumé</a>
 
   <a href="#messages"  class="btn btn-default" type="radio"  data-toggle="tab">Reviews</a>
 
-  <a href="#profile" class="btn btn-default active" type="radio"  data-toggle="tab">Portfolio</a>
+  <a href="#profile" class="btn btn-default" type="radio"  data-toggle="tab">Portfolio</a>
 
 </ul>
 </div>
 
 <!-- Tab panes -->
 <div class="tab-content">
-	<div class="tab-pane" id="home">
+	<div class="tab-pane active" id="home">
 		<%= render 'resume_partial' %>
 	</div>
 
@@ -23,7 +23,7 @@
 		<%= render 'recommendation' %>
 	</div>
 
-	<div class="tab-pane active" id="profile">
+	<div class="tab-pane" id="profile">
 		<%= render 'portfolio' %>
 	</div>
 
