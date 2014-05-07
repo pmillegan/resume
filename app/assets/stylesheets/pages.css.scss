@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-	background-image: url(http://dresssed.com/assets/background-761d998c4d83ce24630e1908fa9f6f95.png);
+	background-color:#dddddd;
 }
 .fa{
 	font-size: large;
@@ -60,4 +60,10 @@ ul {
 }
 .modal-content {
 	border-radius: 0px;
+}
+
+#borderbegone {
+	.btn{
+		border: 0
+	}
 }
